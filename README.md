@@ -38,7 +38,7 @@ The User-Based Book Recommendation System identifies the most similar user (near
   ## Usage
 1. **Run the script:**
    ```sh
-   python Recommendation.py
+   python Recommendation.ipynb
 2. **Interact with the chatbot:**
    Follow the prompts to enter your queries and get book recommendations.
 
