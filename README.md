@@ -86,22 +86,6 @@ for ReaderX in ReaderBookRatings:
 similarity_matrix = pd.DataFrame(manhattan_distances)
 print('\nSimilarity Matrix:')
 print(tabulate(similarity_matrix, headers='keys', tablefmt='fancy_grid'))
-**Similarity matrix output:**
-╒═══════╤═════════╤═══════╤════════╤═══════╤═════════╤═════════╕
-│       │ Abbey   │ Bob   │ Cody   │ Dan   │ Emily   │ Fausa   │
-╞═══════╪═════════╪═══════╪════════╪═══════╪═════════╪═════════╡
-│ Abbey │ -       │ 10.0  │ 17.0   │ 7.0   │ 5.0     │ 2.0     │
-├───────┼─────────┼───────┼────────┼───────┼─────────┼─────────┤
-│ Bob   │ 10.0    │ -     │ 5.0    │ 6.0   │ 19.0    │ 9.0     │
-├───────┼─────────┼───────┼────────┼───────┼─────────┼─────────┤
-│ Cody  │ 17.0    │ 5.0   │ -      │ 5.0   │ 8.0     │ 18.0    │
-├───────┼─────────┼───────┼────────┼───────┼─────────┼─────────┤
-│ Dan   │ 7.0     │ 6.0   │ 5.0    │ -     │ 9.0     │ 7.0     │
-├───────┼─────────┼───────┼────────┼───────┼─────────┼─────────┤
-│ Emily │ 5.0     │ 19.0  │ 8.0    │ 9.0   │ -       │ 5.0     │
-├───────┼─────────┼───────┼────────┼───────┼─────────┼─────────┤
-│ Fausa │ 2.0     │ 9.0   │ 18.0   │ 7.0   │ 5.0     │ -       │
-╘═══════╧═════════╧═══════╧════════╧═══════╧═════════╧═════════╛
 
 ### Finding Recommendations
 Identify the nearest neighbor and recommend books:
@@ -125,22 +109,6 @@ for ReaderX in ReaderBookRatings:
 recommendations_table = pd.DataFrame(recommendations)
 print('\nRecommendations:')
 print(tabulate(recommendations_table, headers='keys', showindex=False, tablefmt='fancy_grid'))
-**Recommendations output:**
-╒══════════╤═══════════════════════════════════════════════════════╕
-│ Reader   │ Recommended Books                                     │
-╞══════════╪═══════════════════════════════════════════════════════╡
-│ Abbey    │ [('Trust', 3)]                                        │
-├──────────┼───────────────────────────────────────────────────────┤
-│ Bob      │ [('Hamlet', 7), ('Trust', 4), ('The Exorcist', 5)]    │
-├──────────┼───────────────────────────────────────────────────────┤
-│ Cody     │ [('Odyssey', 8), ('Beloved', 3), ('Black Beauty', 7)] │
-├──────────┼───────────────────────────────────────────────────────┤
-│ Dan      │ [('Hamlet', 7), ('Trust', 4), ('The Exorcist', 5)]    │
-├──────────┼───────────────────────────────────────────────────────┤
-│ Emily    │ [('The Exorcist', 10), ('The Hobbit', 9)]             │
-├──────────┼───────────────────────────────────────────────────────┤
-│ Fausa    │ [('Black Beauty', 6)]                                 │
-╘══════════╧═══════════════════════════════════════════════════════╛
 
 ## Future Enhancements
 - **Natural Language Processing:** Implement NLP to handle a wider range of queries.
