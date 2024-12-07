@@ -1,5 +1,5 @@
 # Book-recommendation-system
-A simple Python program, that recommends books for users based on their nearest neighbour by calculating he manhattan distances between them. The smaller distance indicates the nearest neighbour.
+A simple Python program, that recommends books for users based on their nearest neighbour by calculating the manhattan distances between them. The smaller distance indicates the nearest neighbour.
 The system uses user-book ratings to make recommendations for other users.
 
 ## Table of Contents
